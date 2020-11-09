@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'style/style.css' %}" type="text/css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="{% static 'script/jscript.js' %}"></script>
+    <script type="text/javascript" src="{% static 'script/ajaxcall.js' %}"></script>
+    <script type="text/javascript" src="{% static 'script/valid.js' %}"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
+    <script src="http://trifacta.github.com/vega/vega.js"></script>
+  <title> FAQ Answering using NLP </title>
+</head>
+
+<body>
+
+<div class="header1">
+    <h1>FAQ Answering using NLP</h1>
+
+</div>
+
+
+<div class="search-box">
+ <input class="search-txt" type="text" name="question" id="question" placeholder="Ask your Question Here...." onfocus="this.value=''" autocomplete="off">
+ <a class="search-btn" href="#" onclick="javascript:SearchLoader();">
+     <i class="fas fa-search"></i>
+ </a>
+</div>
+
+ <div id="load">
+
+</div>
+
+
+
+
+</body>
+</html>
